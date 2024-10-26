@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Add Filters (0 for no filter)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:text="Area:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:hint="(e.g. Area1)"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_below="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:text="Dates"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/Dates1"
+        android:layout_below="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 10/08/2024)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:id="@+id/Dates2"
+        android:layout_below="@+id/Dates1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 17/08/2024)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="@color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_below="@+id/Dates2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:text="Visitors:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/visitors"
+        android:layout_below="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 4)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:typeface="serif"
+
+        />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_below="@+id/visitors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:text="Price Range:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/prange1"
+        android:layout_below="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 100)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        />
+    <EditText
+        android:id="@+id/prange2"
+        android:layout_below="@+id/prange1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 300)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+
+        />
+    <TextView
+        android:id="@+id/text6"
+        android:layout_below="@+id/prange2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:text="Stars(1-5):"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+    <EditText
+        android:id="@+id/stars"
+        android:layout_below="@+id/text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 3)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+
+        />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/stars"
+        android:background="@drawable/button_selector"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+
+
+</RelativeLayout>

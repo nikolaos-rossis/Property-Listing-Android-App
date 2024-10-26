@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Add Available Rent Dates for \n a room"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+
+    <EditText
+        android:id="@+id/Dates1"
+        android:layout_below="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 10/08/2024)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:id="@+id/Dates2"
+        android:layout_below="@+id/Dates1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:hint="(e.g. 17/08/2024)"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+
+        />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Dates2"
+        android:background="@drawable/button_selector"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <ListView
+        android:layout_below="@+id/button1"
+        android:id="@+id/bookings_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp"
+        android:background="#10FFFFFF"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<!-- res/drawable/button_background_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#20FFFFFF"/> <!-- 80% opacity white when pressed -->
+            <corners android:radius="60dp"/>
+            <stroke android:width="2dp" android:color="#FFFFFF"/> <!-- White border -->
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#00FFFFFF"/> <!-- 50% opacity white -->
+            <corners android:radius="60dp"/>
+            <stroke android:width="2dp" android:color="#FFFFFF" /> <!-- White border -->
+        </shape>
+    </item>
+</selector>
